@@ -7,6 +7,14 @@
     </head>
     <body>
     <header>Blaine Andreoli</header>
+    <p>In Class Assignment</p>
+    <ul>
+        <li><a href="misc/friday.php">In Class Assignment</a></li>
+    </ul>
+    <p>Assignment 3.0</p>
+    <ul>
+        <li><a href="assignment3.0/join.php">Assignment 3.0</a></li>
+    </ul>
     <p>Assignment 2.0</p>
     <ul>
         <li><a href="assignment2.0/select.php">Assignment 2.0</a></li>
