@@ -12,7 +12,7 @@ include ("top.php");
         q01. <a href="q01.php">SQL</a> SELECT DISTINCT(fldCourseName) FROM tblEnrolls, tblCourses WHERE fldGrade = 100 AND fnkCourseId = pmkCourseId ORDER BY fldCourseName ASC
     </li>
     <li>
-        q02. <a href="q02.php">SQL</a> SELECT DISTINCT(fldDays), fldStart FROM tblSections, tblTeachers WHERE fldFirstName = "Robert Raymond" AND fldLastName = "Snapp" AND pmkNetId = fnkTeacherNetId AND fldStart NOT LIKE "00:00:00"ORDER BY fldStart
+        q02. <a href="q02.php">SQL</a> SELECT DISTINCT fldCourseName, fldDays, fldStart FROM tblSections, tblTeachers, tblCourses WHERE fldFirstName = "Robert Raymond" AND fldLastName = "Snapp" AND pmkNetId = fnkTeacherNetId AND fnkCourseId = pmkCourseId AND fldStart NOT LIKE "00:00:00"ORDER BY fldStart
     </li>
     <li>
         q03. <a href="q03.php">SQL</a> SELECT DISTINCT fldCourseName, fldDays, fldStart FROM tblSections, tblTeachers, tblCourses WHERE fldFirstName LIKE "Jackie%" AND fldLastName = "Horton" AND pmkNetId = fnkTeacherNetId AND fnkCourseId = pmkCourseId AND fldStart NOT LIKE "00:00:00" ORDER BY fldStart
