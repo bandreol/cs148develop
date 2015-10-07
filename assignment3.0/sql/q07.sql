@@ -1,0 +1,1 @@
+SELECT fldFirstName, fldLastName, COUNT(fnkCourseId) AS courseTotal, AVG(fldGrade) AS gradeAvg FROM tblStudents, tblEnrolls WHERE fnkStudentId = pmkStudentId AND fldState = "VT" GROUP BY fnkStudentId HAVING gradeAvg > 81 ORDER BY gradeAvg DESC

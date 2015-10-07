@@ -1,0 +1,1 @@
+SELECT fldFirstName, fldLastName, SUM(fldNumStudents) AS totalStudents, fldSalary, fldSalary/SUM(fldNumStudents) AS iBB FROM tblTeachers, tblSections, tblCourses WHERE pmkNetId = fnkTeacherNetId AND pmkCourseId = fnkCourseId AND fldDepartment = "CS" AND fldType NOT LIKE "LAB%" AND fldNumStudents NOT LIKE "0" GROUP BY fnkTeacherNetId ORDER BY iBB

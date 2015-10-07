@@ -1,0 +1,1 @@
+ SELECT DISTINCT fldCourseName, fldDays, fldStart FROM tblSections, tblTeachers, tblCourses WHERE fldFirstName LIKE "Jackie%" AND fldLastName = "Horton" AND pmkNetId = fnkTeacherNetId AND fnkCourseId = pmkCourseId AND fldStart NOT LIKE "00:00:00" ORDER BY fldStart

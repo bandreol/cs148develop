@@ -1,0 +1,1 @@
+SELECT pmkStudentId, fldLastName, fldFirstName FROM tblStudents, tblEnrolls, tblCourses WHERE pmkStudentId = fnkStudentId AND pmkCourseId = fnkCourseId AND fldCourseName = "Database Design for the Web"
